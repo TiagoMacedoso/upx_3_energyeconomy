@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de controle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="disjuntor" id="chuveiro">
+            <p>Chuveiro</p>
+            <img src="./disjuntor.png" alt="Chuveiro">
+            <div>
+                <input class="consumo" type="number" value="0" id="input_chuveiro">
+                <p>W</p>
+            </div>
+        </div>
+
+        <div class="disjuntor" id="luz_andar1">
+            <p>Luzes andar 1</p>
+            <img src="./disjuntor.png" alt="Luzes andar 1">
+            <div>
+                <input class="consumo" type="number" value="0" id="input_luz_andar1">
+                <p>W</p>
+            </div>
+        </div>
+
+        <div class="disjuntor" id="luz_andar2">
+            <p>Luzes andar 2</p>
+            <img src="./disjuntor.png" alt="Luzes andar 2">
+            <div>
+                <input class="consumo" type="number" value="0" id="input_luz_andar2">
+                <p>W</p>
+            </div>
+        </div>
+
+        <div class="disjuntor" id="tomadas_10a">
+            <p>Tomadas 10A</p>
+            <img src="./disjuntor.png" alt="Tomadas 10A">
+            <div>
+                <input class="consumo" type="number" value="0" id="input_tomadas_10a">
+                <p>W</p>
+            </div>
+        </div>
+
+        <div class="disjuntor" id="tomadas_20a">
+            <p>Tomadas 20A</p>
+            <img src="./disjuntor.png" alt="Tomadas 20A">
+            <div>
+                <input class="consumo" type="number" value="0" id="input_tomadas_20a">
+                <p>W</p>
+            </div>
+        </div>
+
+        <div class="disjuntor" id="ar_condicionado">
+            <p>Ar condicionado</p>
+            <img src="./disjuntor.png" alt="Ar condicionado">
+            <div>
+                <input class="consumo" type="number" value="0" id="input_ar_condicionado">
+                <p>W</p>
+            </div>
+        </div>
+
+        <div class="infos" id="total_w">
+            <div class="container">
+                <p>Total</p>
+                <p class="valores"><span id="total_em_w">???</span>W</p>
+            </div>
+        </div>
+
+        <div class="infos" id="por_w">
+            <div class="container">
+                <p>Fatura por W</p>
+                <div class="valores">
+                    <span>R$</span>
+                    <input class="custo" type="number" value="00,00" id="input_fatura">
+                </div>
+            </div>
+        </div>
+
+        <div class="infos" id="total_real">
+            <div class="container">
+                <p>Gasto</p>
+                <p class="valores">R$ <span id="total_em_real">??,??</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
